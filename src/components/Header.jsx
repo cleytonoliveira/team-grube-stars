@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  let width;
-  let height;
   const [small, setSmall] = useState(false);
 
   useEffect(() => {
@@ -24,7 +22,7 @@ export default function Header() {
 
   return (
     <header className={headerClass}>
-      <h1 className="flex flex-col items-center text-[#FFC927] font-bold">
+      <h1 className="flex flex-col items-center text-[#FFC927] font-bold font-sans">
         <Image
           src="/images/logo.jpg"
           width={imageSize.width}
@@ -32,7 +30,7 @@ export default function Header() {
           alt="Logo da Team Grube"
           className="ease-in-out transition-all duration-300"
         />
-        STARS
+        Awards
       </h1>
     </header>
   );
