@@ -26,7 +26,7 @@ const athletes = [
   {
     name: "Yuri Strapasson",
     team: "Grube Tamandaré",
-    imageSrc: "https://avatars.githubusercontent.com/u/1015235?v=4",
+    imageSrc: "/images/athletes/yuri.jpg",
     score: 41,
     wins: 0,
     losses: 0,
