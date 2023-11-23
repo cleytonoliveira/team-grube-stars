@@ -1,9 +1,11 @@
 import { Inter } from "next/font/google";
 
+import "../../global.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Team Grube Stars",
+  title: "Team Grube Awards",
   description: "Ranking dos melhores atletas de Jiu Jitsu do Team Grube",
   icons: {
     icon: "/images/grube-ico.png",
