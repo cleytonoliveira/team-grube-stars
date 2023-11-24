@@ -33,7 +33,7 @@ export default function Ranking() {
   }
 
   return (
-    <section className="w-full md:w-[600px] m-auto leading-relaxed">
+    <section className="md:w-[600px] m-auto leading-relaxed">
       <h2 className="text-center text-3xl py-2 text-white bg-[#171719] rounded-t-2xl">
         Ranking 2023
       </h2>
