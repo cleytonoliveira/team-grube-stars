@@ -1,5 +1,6 @@
 import athletes from "@/infra/athletesDB";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Ranking() {
   const positionByScore = {};
@@ -41,18 +42,22 @@ export default function Ranking() {
         {athletesSortedByScore.map((athlete, index) => (
           <li key={index} className="flex items-center px-6 py-2.5">
             <div className="mr-4">
-              <Image
-                src={athlete.imageSrc}
-                width={50}
-                height={50}
-                alt={`Imagem do atleta ${athlete.name} - ${athlete.team}`}
-                className="rounded-full"
-              />
+              <Link href={`/profile/${athlete.name}`}>
+                <Image
+                  src={athlete.imageSrc}
+                  width={50}
+                  height={50}
+                  alt={`Imagem do atleta ${athlete.name} - ${athlete.team}`}
+                  className="rounded-full"
+                />
+              </Link>
             </div>
             <div className="flex flex-col basis-[10%] grow truncate">
               <span>
                 {handleNumberPosition(index, athlete.score)}
-                <strong>{athlete.name}</strong>
+                <Link href={`/profile/${athlete.name}`}>
+                  <strong>{athlete.name}</strong>
+                </Link>
               </span>
               <span>{athlete.team}</span>
             </div>
