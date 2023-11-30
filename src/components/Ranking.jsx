@@ -71,6 +71,9 @@ export default function Ranking() {
               <div className="flex flex-col items-center ml-4 text-red-500">
                 <strong>{athlete.losses}</strong> Derrotas
               </div>
+              <div className="flex flex-col items-center ml-4 text-blue-500">
+                <strong>{athlete.submissions}</strong> Finalizações
+              </div>
             </div>
           </li>
         ))}
